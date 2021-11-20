@@ -1,0 +1,139 @@
+/*++++++++++++++++++++*/
+/* filter search page */
+/*++++++++++++++++++++*/
+
+.searchArea {
+    border: solid #e7e7e7;
+    border-radius: 10px;
+    margin: 0px 50px 50px 50px;
+    padding: 20px 0px 10px 20px;
+    line-height: 3;
+}
+
+.textbox{
+    text-align: center;
+    display: inline-block;
+    border: solid #e7e7e7;
+    border-width: 2px;
+    border-radius: 5px;
+    width: 200px;
+    line-height: 40px;
+    margin: 0px 30px 10px 0px;
+    margin-bottom: 10px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+
+select {
+    width: 200px;
+    padding-left: .8em;
+    border: 2px solid #e7e7e7;
+    font-family: inherit;
+    border-radius: 5px;
+    height: 40px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+
+}
+
+input[type="radio"] {
+    width: 1em;
+    height: 1em;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+input[type="submit"] {
+    width: 100px;
+    height: 45px;
+    border: 0px solid;
+    border-radius: 5px;
+    background-color: #751A21;
+    color: white;
+    float: right;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+label {
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+
+.filter {
+    cursor: pointer;
+    width: 70px;
+    height: 35px;
+    border: 0px solid;
+    border-radius: 5px 5px 0px 0px;
+    background-color: #751A21;
+    color: white;
+    margin: 10px 0px 0px 70px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+
+.keyword {
+    cursor: pointer;
+    width: 70px;
+    height: 35px;
+    border: 0px solid;
+    border-radius: 5px 5px 0px 0px;
+    background-color: #e7e7e7;
+    color: black;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+
+.restaurant {
+    border: solid #751A21;
+    border-width: 0 0 0 5px;
+    margin: 0px 10px 70px 50px;
+    padding: 20px;
+    width: 250px;
+    display: inline-block;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+
+.resname {
+    font-size: 20px;
+}
+
+.restype {
+    font-size: 14px;
+    float: right;
+}
+
+.reslocate, .restelenum {
+    margin: 15px 0px 15px 0px;
+}
+
+.resprice {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.resrating {
+    font-size: 14px;
+    margin-bottom: 10px;
+    float: right;
+}
+
+img {
+    margin-bottom: 20px;
+}

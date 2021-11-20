@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Keyword Search</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="layout.css">
+        <link rel="stylesheet" href="keywordSearch.css">
+        <nav class="sticky-nav">
+        <div class="flex-left">
+        <div class="nav-box">
+        <ul><li><a href="index.html">Home</a></li>
+        <li><a href="filterSearch.html">Restaurants</a></li>
+        <li><a href="dashboard.php">Dashboard</a></li>
+        <li><a href="#">My Page</a></li>
+        </ul></div></div>
+        <div class="flex-right">
+        <div class="login-box">
+        <ul><li><a href="#">LOGIN</a></li>
+        </ul></div></div></nav>
+        <br><br><br><br><br>
+    </head>
+    <body>
+        <a href="filterSearch.html"><button class="filter">Filter</button></a>
+        <a href="keywordSearch.html"><button class="keyword">Keyword</button></a>
+        <div class="searchArea">
+            <form action="keywordSearch.php" method="POST">
+                <label><input type="hidden" name="private_room" value="0" />
+                <input type="checkbox" name="private_room" value="1" />&nbsp;&nbsp;Private Room&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <label><input type="hidden" name="non_smoking" value="0" />
+                <input type="checkbox" name="non_smoking" value="1" />&nbsp;&nbsp;Non-Smoking&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <label><input type="hidden" name="vallet_parking" value="0" />
+                <input type="checkbox" name="vallet_parking" value="1" />&nbsp;&nbsp;Vallet Parking&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <label><input type="hidden" name="parking_lot" value="0" />
+                <input type="checkbox" name="parking_lot" value="1" />&nbsp;&nbsp;Parking Lot<br></label>
+                <label><input type="hidden" name="wheelchair" value="0" />
+                <input type="checkbox" name="wheelchair" value="1" />&nbsp;&nbsp;Wheelchair&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <label><input type="hidden" name="great_view" value="0" />
+                <input type="checkbox" name="great_view" value="1" />&nbsp;&nbsp;Great View&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <label><input type="hidden" name="counter_table" value="0" />
+                <input type="checkbox" name="counter_table" value="1" />&nbsp;&nbsp;Counter Table&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <label><input type="hidden" name="booking_essential" value="0" />
+                <input type="checkbox" name="booking_essential" value="1" />&nbsp;&nbsp;Booking Essential</label>
+                <input type="submit" value="Search" />
+            </form>
+        </div>
+    </body>
+</html>
