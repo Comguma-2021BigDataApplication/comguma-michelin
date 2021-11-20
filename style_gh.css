@@ -1,0 +1,73 @@
+/*
+login.php
+join.php
+delete.php
+delete_check.php
+edit.php
+*/
+
+.main {
+  height: 150px;
+  line-height: 15px;
+  text-align: center;
+}
+
+.text {
+  padding: 0px 350px;
+  text-align: left;
+}
+
+.text_mypage {
+  padding: 0px 100px;
+  text-align: left;
+}
+
+.text_recommended {
+  border: 1px solid #751A21;
+  border-radius: 5px;
+  background-color: #FFFFFF;
+  display: inline-block;
+  width: 335px;
+  height: 270px;
+  padding: 5px;
+  font-size: small;
+}
+
+.resimg img{
+  border-radius: 3px;
+  width: 335px;
+  height: 200px;
+  object-fit:cover;
+}
+
+.edit button{
+  border: 1px solid #FFFFFF;
+  background-color: #FFFFFF;
+  padding: 5px;
+  text-align: center;
+  font-size: small;
+}
+
+.btngroup button{
+  border: 1px solid #751A21;
+  border-radius: 5px;
+  background-color: #751A21;
+  color: #FFFFFF;
+  padding: 5px;
+  text-align: center;
+  display: inline-block;
+}
+
+input[type="text"] {
+  border: 1px solid #751A21;
+  border-radius: 3px;
+  background-color: #FFFFFF;
+  padding: 3px;
+}
+
+input[type="radio"] {
+  width: 1em;
+  height: 1em;
+  vertical-align: middle;
+  cursor: pointer;
+}
