@@ -181,7 +181,9 @@
 /*+++++++*/
 
 table {
-    margin: auto auto;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
     border: 1px solid;
     border-collapse: collapse;
     background-color: rgb(255, 244, 231);
@@ -203,7 +205,6 @@ th {
 .wrapper {
     float: left;
     margin-left: 50px;
-    margin-bottom: 50px;
     padding: 10px;
     max-width: max-content;
     height: fit-content;
@@ -240,12 +241,21 @@ th {
     color: #0f1111;
 }
 
+.michelin-res {
+    float: left;
+    margin-top: 5px;
+    padding: 10px;
+    color: #0f1111;
+}
+
 .inner-stars {
     background-color: #fff;
     border: 1px solid #d5d9d9;
     border-radius: 8px;
     box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0;
-    box-sizing: border-box;    margin-bottom: 20px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    max-width: 250px;
     padding: 15px 40px;
 }
 
@@ -265,3 +275,39 @@ th {
     font-size: 200%;
     letter-spacing: -0.5px;
 }
+
+.inner-menu {
+    margin-top: 10px;
+    text-align: center;
+    font-family: 'Maven Pro', sans-serif;
+    font-weight: 600;
+    font-size: 200%;
+    letter-spacing: -0.5px;
+}
+
+.inner-box {
+    box-sizing: border-box;
+    background-color: #fff;
+    border: 1px solid #d5d9d9;
+    border-radius: 8px;
+    box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0;
+    width: 720px;
+    height: auto;
+}
+
+/* .inner-box:first-child {
+    margin-bottom: 50px;
+} */
+
+#wordCloudimg {
+    width: 700px;
+    height: auto;
+    margin-bottom: 10px;
+    position: relative;
+    background-color: #fff;
+}
+
+#restaurant-name {
+    margin-left: 30px;
+}
+  

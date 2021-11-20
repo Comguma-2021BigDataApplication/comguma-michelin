@@ -6,7 +6,7 @@ include "topnav.php";
 $result = 0;
 $value = $_POST['input_check'];
 
-$con = mysqli_connect("localhost", "team13", "team13", "team13") or die("MySQL 접속 실패");
+$con = mysqli_connect("localhost", "root", "1234", "team13") or die("MySQL 접속 실패");
 
 // SQL문
 if ($value == 1) {
