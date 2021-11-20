@@ -11,7 +11,7 @@ $pw = $_POST['pw'];
 $pref = $_POST['pref'];
 $locate = $_POST['locate'];
 
-$conn = mysqli_connect("localhost", "root", "team13", "team13");
+$conn = mysqli_connect("localhost", "team13", "team13", "team13");
 
 $sql = "
         INSERT INTO users
