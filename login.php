@@ -2,7 +2,6 @@
 require_once('topnav.php');
 require_once('head.html');
 
-session_destroy();
 session_start();
 
 echo '<link rel="stylesheet" href="style_gh.css">';
