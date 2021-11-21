@@ -19,31 +19,33 @@ while ($row = mysqli_fetch_array($ret10)) {
 </head>
 
 <body>
-    <div class="michelin-stars">
-        <div class="inner-stars">
-            <h2 id="total">Total</h2>
-            <br>
-            including Bib Gourmand<br>
-            <div class="star-counts">
-                <?php echo $star_arr[0] + $star_arr[1] + $star_arr[2] + $star_arr[3]; ?>
+    <div class="wrapper">
+        <div class="michelin-stars">
+            <div class="inner-stars">
+                <h2 id="total">Total</h2>
+                <br>
+                including Bib Gourmand<br>
+                <div class="star-counts">
+                    <?php echo $star_arr[0] + $star_arr[1] + $star_arr[2] + $star_arr[3]; ?>
+                </div>
             </div>
-        </div>
-        <div class="inner-stars">
-            <h2>★★★</h2><br>
-            <div class="star-counts">
-                <?php echo $star_arr[1]; ?>
+            <div class="inner-stars">
+                <h2>★★★</h2><br>
+                <div class="star-counts">
+                    <?php echo $star_arr[1]; ?>
+                </div>
             </div>
-        </div>
-        <div class="inner-stars">
-            <h2>★★</h2>
-            <div class="star-counts">
-                <?php echo $star_arr[2]; ?>
+            <div class="inner-stars">
+                <h2>★★</h2>
+                <div class="star-counts">
+                    <?php echo $star_arr[2]; ?>
+                </div>
             </div>
-        </div>
-        <div class="inner-stars">
-            <h2>★</h2>
-            <div class="star-counts">
-                <?php echo $star_arr[3]; ?>
+            <div class="inner-stars">
+                <h2>★</h2>
+                <div class="star-counts">
+                    <?php echo $star_arr[3]; ?>
+                </div>
             </div>
         </div>
     </div>

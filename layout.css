@@ -184,6 +184,7 @@ table {
     margin-top: auto;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 50px;
     border: 1px solid;
     border-collapse: collapse;
     background-color: rgb(255, 244, 231);
@@ -204,6 +205,14 @@ th {
 
 .wrapper {
     float: left;
+    margin-left: 50px;
+    padding: 10px;
+    max-width: max-content;
+    height: fit-content;
+}
+
+.wrapper-bottom {
+    display: inline-block;
     margin-left: 50px;
     padding: 10px;
     max-width: max-content;

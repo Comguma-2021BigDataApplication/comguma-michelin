@@ -114,7 +114,11 @@ while ($row = mysqli_fetch_array($ret1)) {
     echo $row['menu'];
     echo "   ";
     if (isset($row['min_menu_price'])) {
-        echo $row['min_menu_price'] . "~" . $row['max_menu_price'] . "원";
+        if ($row['min_menu_price'] == $row['max_menu_price']) {
+            echo $row['min_menu_price'] . '원';
+        } else {
+            echo $row['min_menu_price'] . "~" . $row['max_menu_price'] . "원";
+        }
     } else {
         echo "변동가격";
     }
