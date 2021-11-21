@@ -3,7 +3,7 @@ CREATE TABLE ratings (
     resrating DOUBLE NOT NULL,
     resratingnum INT NOT NULL
 ) ENGINE=INNODB CHARSET=utf8mb4;
-
+ 
 CREATE TABLE reviews (
     resid INT NOT NULL,
     resreview LONGTEXT,
