@@ -89,7 +89,7 @@ if ($res) {
 
             echo "<div class='restaurant'>";
             echo '<form action="restaurant.php" method="POST">';
-            echo "<img src='resimages/" . $row['resid'] . ".jpg' alt='My Image' height='150'>";
+            echo "<img src='resimages/" . $row['resid'] . ".jpg' alt='My Image'>";
             echo "</button>";
             echo "<input type='hidden' name='resname' value='" . $row['resname_kr'] . "'>";
             echo "<div class='resname'>" . $row['resname_en'] . "</div><br>";
