@@ -11,6 +11,14 @@ while ($row = mysqli_fetch_array($ret)) {
 }
 
 $resname = $_POST['resname'];
+
+if ($resname === '꽃, 밥에피다') {
+    $resname = str_replace('꽃, 밥에피다', '꽃 밥에피다', $resname);
+} elseif ($resname === '안씨막걸리') {
+    $resname = str_replace('안씨막걸리', '안씨 막걸리', $resname);
+    echo $resname;
+}
+
 $resnameIndex = strval(array_search($resname, $resname_arr));
 
 // MENU
@@ -88,7 +96,6 @@ echo $row['en'];
                     <?php
 $row = mysqli_fetch_array($ret4);
 echo $row['resrating'];
-echo gettype($resnameIndex);
 ?>
                 </h3>
             </div>

@@ -20,7 +20,7 @@
         <div class="flex-right">
             <div class="login-box">
                 <ul>
-                    <li><a href="#">LOGIN</a></li>
+                    <li><a href="login.php">LOGIN</a></li>
                 </ul>
             </div>
         </div>
@@ -90,6 +90,8 @@ if ($res1) {
             if ($res2) {
                 while ($row2 = mysqli_fetch_assoc($res2)) {
                     echo "<div class='restaurant'>";
+                    echo '<form action="restaurant.php" method="POST">';
+                    echo "<input type='hidden' name='resname' value='" . $row2['resname_kr'] . "'>";
                     echo "<img src='resimages/" . $row2['resid'] . ".jpg' alt='My Image' height='150'>";
                     echo "<div class='resname'>" . $row2['resname_en'] . "</div><br>";
                     echo "<div class='restype'>" . $row2['restype_en'] . " / " . $row2['resdist_en'] . "</div><br>";
@@ -97,6 +99,8 @@ if ($res1) {
                     echo "<div class='restelenum'>" . $row2['restelenum'] . "</div>";
                     echo "<div class='resprice'>" . $row2['resmin'] . " ~ " . $row2['resmax'] . " won </div>";
                     echo "<div class='resrating'>" . $row2['resrating'] . " points<br>" . $row2['resratingnum'] . " rewiews </div>";
+                    echo "<input type='submit' value='View Detail'>";
+                    echo "</form>";
                     echo "</div>";
                 }
             }
