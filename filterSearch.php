@@ -78,7 +78,7 @@
             if (mysqli_num_rows($res) > 0){
                 while ($row = mysqli_fetch_assoc($res)){
                     echo "<div class='restaurant'>";
-                    echo "<img src='resimages/" . $row['resid'] . ".jpg' alt='My Image' height='150'>";
+                    echo "<img src='resimages/" . $row['resid'] . ".jpg' alt='My Image'>";
                     echo "<div class='resname'>" . $row['resname_en'] . "</div><br>";
                     echo "<div class='restype'>" . $row['restype_en'] . " / " . $row['resdist_en'] . "</div><br>";
                     echo "<div class='reslocate'>" . $row['reslocate_en'] . "</div>";

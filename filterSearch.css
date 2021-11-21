@@ -136,4 +136,8 @@ label {
 
 img {
     margin-bottom: 20px;
+    border-radius: 3px;
+    width: 250px;
+    height: 150px;
+    object-fit: cover;
 }
