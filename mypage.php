@@ -86,13 +86,13 @@ if ($_SESSION['id'] == null) {
                 $tele_val = $tele_list[$i];
                 $sql2 = "
                 SELECT * FROM nametbl
-                WHERE res_id = '" . $id_val . "'
+                WHERE resid = '" . $id_val . "'
                 ;";
                 $ret2 = mysqli_query($conn, $sql2);
                 $row2 = mysqli_fetch_array($ret2);
                 $sql3 = "
                 SELECT * FROM typetbl
-                WHERE res_id = '" . $id_val . "'
+                WHERE resid = '" . $id_val . "'
                 ;";
                 $ret3 = mysqli_query($conn, $sql3);
                 $row3 = mysqli_fetch_array($ret3);
