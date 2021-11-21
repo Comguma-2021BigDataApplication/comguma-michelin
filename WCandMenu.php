@@ -16,7 +16,7 @@ $sql_1 = "SELECT * FROM menutbl WHERE res_name_ko = " . "'라연'" . ";";
 $ret1 = mysqli_query($con, $sql_1);
 
 // OPINION
-$sql_2 = "SELECT * FROM opiniontbl WHERE idx = " . "2" . ";";
+$sql_2 = "SELECT * FROM opiniontbl WHERE resid = " . "2" . ";";
 
 $ret2 = mysqli_query($con, $sql_2);
 
@@ -25,6 +25,10 @@ $sql_3 = "SELECT * FROM locatnteles WHERE resid = " . "2" . ";";
 
 $ret3 = mysqli_query($con, $sql_3);
 
+// RATING
+$sql_4 = "SELECT * FROM ratings WHERE resid = " . "2" . ";";
+
+$ret4 = mysqli_query($con, $sql_4);
 ?>
 
 
@@ -78,8 +82,11 @@ echo $row['en'];
             </div>
             <div class="inner-stars">
                 <h3>
-
-                    ★ 4.79
+                    ★
+                    <?php
+$row = mysqli_fetch_array($ret4);
+echo $row['resrating'];
+?>
                 </h3>
             </div>
         </div>
