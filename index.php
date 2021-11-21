@@ -45,16 +45,21 @@
                             <li>
                                 <a href="login.php">LOGIN</a>
                             </li>
-                            <!-- <li>
-                                <a href="#">JOIN</a>
-                            </li> -->
                         </ul>
                     </div>
                 </div>
             </nav>
         </header>
     </div>
-
+    <div class="content-center">
+        <h2>
+            Welcome
+        </h2>
+        <p>
+            We are Jimin Kim, Seoyoung Ryu, and Geonhui Jo from team13.
+        </p>
+        <img src="landingimg.png" width=500px height=auto>
+    </div>
     <svg width="960" height="500"></svg>
     <script src="https://d3js.org/d3.v7.min.js"></script>
 

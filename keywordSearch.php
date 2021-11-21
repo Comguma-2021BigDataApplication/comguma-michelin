@@ -10,7 +10,7 @@
         <div class="flex-left">
             <div class="nav-box">
                 <ul>
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.php">Home</a></li>
                     <li><a href="filterSearch.html">Restaurants</a></li>
                     <li><a href="dashboard.php">Dashboard</a></li>
                     <li><a href="mypage.php">My Page</a></li>

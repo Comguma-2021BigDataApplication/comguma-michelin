@@ -163,3 +163,15 @@ p {
   cursor: pointer;
   background-color: #ffffff;
 }
+
+.content-center {
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  text-align: center;
+}
+
+.content-center p {
+  margin: 20px auto;
+  font-size: 150%;
+}
