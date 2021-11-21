@@ -25,16 +25,16 @@
                     <div class="nav-box">
                         <ul>
                             <li>
-                                <a href="#">Home</a>
+                                <a href="index.php">Home</a>
                             </li>
                             <li>
-                                <a href="#">Restaurants</a>
+                                <a href="filterSearch.html">Restaurants</a>
                             </li>
                             <li>
                                 <a href="dashboard.php">Dashboard</a>
                             </li>
                             <li>
-                                <a href="#">My Page</a>
+                                <a href="mypage.php">My Page</a>
                             </li>
                         </ul>
                     </div>
@@ -43,7 +43,7 @@
                     <div class="login-box">
                         <ul>
                             <li>
-                                <a href="#">LOGIN</a>
+                                <a href="login.php">LOGIN</a>
                             </li>
                             <!-- <li>
                                 <a href="#">JOIN</a>

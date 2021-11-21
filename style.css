@@ -158,3 +158,8 @@ p {
   font-size: 250%;
 }
 
+.clickable-img {
+  border: none;
+  cursor: pointer;
+  background-color: #ffffff;
+}

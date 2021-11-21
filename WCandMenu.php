@@ -10,23 +10,26 @@ while ($row = mysqli_fetch_array($ret)) {
     array_push($resname_arr, $row['res_name_ko']);
 }
 
+$resname = $_POST['resname'];
+$resnameIndex = strval(array_search($resname, $resname_arr));
+
 // MENU
-$sql_1 = "SELECT * FROM menutbl WHERE res_name_ko = " . "'라연'" . ";";
+$sql_1 = "SELECT * FROM menutbl WHERE resid = " . $resnameIndex . ";";
 
 $ret1 = mysqli_query($con, $sql_1);
 
 // OPINION
-$sql_2 = "SELECT * FROM opiniontbl WHERE resid = " . "2" . ";";
+$sql_2 = "SELECT * FROM opiniontbl WHERE resid = " . $resnameIndex . ";";
 
 $ret2 = mysqli_query($con, $sql_2);
 
 // LOCATION and TELEPHONE
-$sql_3 = "SELECT * FROM locatnteles WHERE resid = " . "2" . ";";
+$sql_3 = "SELECT * FROM locatnteles WHERE resid = " . $resnameIndex . ";";
 
 $ret3 = mysqli_query($con, $sql_3);
 
 // RATING
-$sql_4 = "SELECT * FROM ratings WHERE resid = " . "2" . ";";
+$sql_4 = "SELECT * FROM ratings WHERE resid = " . $resnameIndex . ";";
 
 $ret4 = mysqli_query($con, $sql_4);
 ?>
@@ -48,8 +51,7 @@ $ret4 = mysqli_query($con, $sql_4);
                 Keywords
             </h3>
             <?php
-$filename = '';
-$filename = $resname_arr[2] . '.png';
+$filename = $resname . '.png';
 echo "<img src='./img/{$filename}', id='wordCloudimg'/>";
 ?>
         </div>
@@ -61,7 +63,7 @@ echo "<img src='./img/{$filename}', id='wordCloudimg'/>";
         <div class="michelin-res">
             <div class="inner-stars">
                 <h3 id="restaurant-name">
-                    <?php echo $resname_arr[2]; ?>
+                    <?php echo $resname ?>
                 </h3>
                 <?php
 $row = mysqli_fetch_array($ret3);
@@ -86,6 +88,7 @@ echo $row['en'];
                     <?php
 $row = mysqli_fetch_array($ret4);
 echo $row['resrating'];
+echo gettype($resnameIndex);
 ?>
                 </h3>
             </div>
@@ -103,7 +106,12 @@ echo "<p id='menu-restaurant', style='margin-left:50px;margin-bottom:50px; font-
 while ($row = mysqli_fetch_array($ret1)) {
     echo $row['menu'];
     echo "   ";
-    echo $row['min_menu_price'] . "~" . $row['max_menu_price'] . "원";
+    if (isset($row['min_menu_price'])) {
+        echo $row['min_menu_price'] . "~" . $row['max_menu_price'] . "원";
+    } else {
+        echo "변동가격";
+    }
+
     echo "<br>";
 }
 echo "</p>";
